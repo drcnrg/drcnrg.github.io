@@ -494,13 +494,18 @@ a { color: inherit; }
 #msg-send-btn {
     height: 44px; padding: 0 20px; margin-bottom: 1px; flex-shrink: 0;
     display: flex; align-items: center; justify-content: center; gap: 8px;
-    background-image: linear-gradient(to right, var(--y500), #ed3f05); color: #000; box-shadow: 0 0 15px rgba(234, 179, 8, 0.4);
-    border: 1px solid rgba(234, 179, 8, 0.3); border-radius: 12px; color: #000;
+    background-image: linear-gradient(to right, rgba(202, 138, 4, 0.2), rgba(234, 88, 12, 0.2));
+    border: 1px solid rgba(234, 179, 8, 0.3); border-radius: 12px;
+    color: rgb(234, 179, 8);
     font-weight: 500; font-size: 14px; line-height: 20px;
     transition: all 0.2s;
 }
 #msg-send-btn svg { width: 16px; height: 16px; }
-#msg-send-btn:hover { background-image: linear-gradient(to right, var(--y500), #f97316); color: #000; box-shadow: 0 0 15px rgba(234, 179, 8, 0.4); }
+#msg-send-btn:hover {
+    background-image: linear-gradient(to right, rgb(234, 179, 8), rgb(249, 115, 22));
+    color: #000;
+    box-shadow: 0 0 15px rgba(234, 179, 8, 0.4);
+}
 #msg-send-btn:active { transform: scale(0.97); }
 #msg-send-btn[disabled] { opacity: 0.6; }
 
